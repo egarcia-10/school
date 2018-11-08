@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home | GS</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" href="final.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon-32x32.png">
+<style>
+* {box-sizing:border-box}
+
+.mySlides {display:none;
+
+	}
+
+
+.slideshow-container {
+  max-width: 2300px;
+  position: relative;
+  margin: auto;
+  margin-top:15px;
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 220px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: none;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1.5s ease;
+  display:none
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.fa {padding:20px;
+	font-size: 30px;
+	width: 70px;
+	text-align:center;
+	text-decoration:none;
+	border-radius:50%;
+	margin-top:10px;
+	margin-right:10px
+	}
+	
+.fa:hover{opacity:0.7;}
+
+.fa-facebook {background: #3b5998;
+			color:white;
+			}
+			
+.fa-twitter {background:#55acee;
+			color: white;
+			}
+			
+
+</style>
+</head>
+<body>
+
+	<main class="wrapper">
+		<div class="row header">
+			<div class="column1"><a href="index.html">Get Schooled</a> </div>
+			<div class="column2">
+				<p style="float:right; margin-top: -10px; margin-right: 5px;"> <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+				<a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a></p>
+			</div>
+		</div>
+	
+	
+	<div class="nav">
+		<nav>
+			<ul>
+				<li><a href="index.html"><img style="margin-bottom:-6px" src="homeicon.png" alt="Home Icon" width="35" height="35"></a></li>
+				<li><a href="schools.html">Schools</a></li>
+				<li><a href="scholar.html">Scholarships</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+			
+				<form method="get" style="margin-left:150px" class="search">
+					<input type="submit" value="Search">
+					<input type="text" data-url="http://19.muitlive.com/">
+				</form>
+		</nav>
+	</div>
+	
+	<div class="slideshow-container">
+		
+		<div class="mySlides fade">
+			<img src="alabama.jpg" alt="University of Alabama" style="width:100%">
+			<div class="text"><img src="alabamalogo.png" alt="Alabama Logo" height="20%" width="50%"></div>
+		</div>
+		
+		<div class="mySlides fade">
+			<img src="mizzou.jpg" alt="University of Missouri" style="width:100%">
+			<div class="text"><img src="mizzoulogo.png" alt="Mizzou Logo" height="25%" width="55%"></div>
+		</div>
+		
+		<div class="mySlides fade">
+			<img src="marymount.jpg" alt="Marymount University" style="width:100%">
+			<div class="text"><img src="marymountlogo.png" alt="Marymount Logo" height="20%" width="50%"></div>
+		</div>
+		
+		<div class="mySlides fade">
+			<img src="texastech.jpg" alt="Texas Tech University" style="width:100%">
+			<div class="text"><img src="texastechlogo.png" alt="Texas Tech Logo" height="20%" width="50%"></div>
+		</div>
+		
+		<div class="mySlides fade">
+			<img src="texasam.jpg" alt="Texas AM University" style="width:100%">
+			<div class="text"><img style="margin-bottom:-50px" src="texasamlogo.png" alt="Texas AM Logo" height="30%" width="55%"></div>
+		</div>
+			<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+	</div>
+	
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); 
+}
+</script>
+
+	<div class="index">
+		<h1 style="text-align:center">What We Are About</h1>
+		
+		<p> Get Schooled is determined to find you the best possible match when searching for
+		the University that is right for you. We highlight top tier schools, and give you as
+		much information about these schools, so that you can feel well prepared to attend 
+		your future alumni. We even highlight scholarship opportunities for each school so
+		that you can apply and potentially save you cost on tuition. We hope that we can 
+		help you on your way to becoming a graduate!</p>
+	<br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/ABBko0Usltc" allowfullscreen></iframe>
+	<br>
+	<br>
+	</div>
+	
+	
+</main>	
+		
+	<footer> Eric Garcia &copy; Copyright 2017 </footer>
+</body>
+</html>

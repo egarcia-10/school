@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gallery | GS</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" href="final.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon-32x32.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.fa {padding:20px;
+	font-size: 30px;
+	width: 30px;
+	text-align:center;
+	text-decoration:none;
+	border-radius:50%;
+	margin-top:10px;
+	margin-right:10px
+	}
+	
+.fa:hover{opacity:0.7;}
+
+.fa-facebook {background: #3b5998;
+			color:white;
+			}
+			
+.fa-twitter {background:#55acee;
+			color: white;
+			}
+			
+</style>
+</head>
+<body>
+
+	<main class="wrapper">
+		<div class="row header">
+			<div class="column1"><a href="index.html">Get Schooled</a> </div>
+			<div class="column2">
+				<p style="float:right; margin-top: -10px; margin-right: 5px;"> <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+				<a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a></p>
+			</div>
+		</div>
+	
+	
+	<div class="nav">
+		<nav>
+			<ul>
+				<li><a href="index.html"><img style="margin-bottom:-6px" src="homeicon.png" alt="Home Icon" width="35" height="35"></a></li>
+				<li><a href="schools.html">Schools</a></li>
+				<li><a href="scholar.html">Scholarships</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+			
+				<form method="get" style="margin-left:150px" class="search">
+					<input type="submit" value="Search">
+					<input type="text">
+				</form>
+		</nav>
+	</div>
+	
+	<div class="tab">
+  		<div class="acolor"><button class="tablinks" onclick="openCity(event, 'alabama')" id="defaultOpen">University of Alabama</button></div>
+  		<div class="bcolor"><button class="tablinks" onclick="openCity(event, 'missouri')">University of Missouri</button></div>
+  		<div class="ccolor"><button class="tablinks" onclick="openCity(event, 'marymount')">Marymount University</button></div>
+  		<div class="dcolor"><button class="tablinks" onclick="openCity(event, 'texastech')">Texas Tech University</button></div>
+  		<div class="ecolor"><button class="tablinks" onclick="openCity(event, 'texasam')">Texas A&M University</button></div>
+	</div>
+
+	<div id="alabama" class="tabcontent">
+		<div class="gallery">
+ 		 <ul> 
+ 		 	<li>
+ 		 		<a href="alabama1.jpg"><img src="alabamathumb.jpg" alt="Alabama Thumbnail" height="70" width="110">
+ 		 		<span><img src="alabama1.jpg" alt="UofA" height="300" width="500"><br>Michaels Hall</span></a>
+ 		 	</li>
+ 		 	
+ 		 	<li>
+ 		 		<a href="alabama2.jpg"><img src="alabamathumb2.jpg" alt="Alabama" height="70" width="110">
+ 		 		<span><img src="alabama2.jpg" alt="UofA" height="300" width="500"><br>Bear Bryant Stadium</span></a>
+ 		 	</li>
+ 		 	
+ 		 	<li>
+ 		 		<a href="alabama3.jpg"><img src="alabamathumb3.jpg" alt="Alabama" height="70" width="110">
+ 		 		<span><img src="alabama3.jpg" alt="UofA" height="300" width="500"><br>Campus</span></a>
+ 		 	</li>
+ 		 	
+ 		  </ul>
+ 		 </div>
+ 		 
+	</div>
+
+	
+	<div id="missouri" class="tabcontent">
+ 	 	<div class="gallery">
+ 		 <ul> 
+ 		 	<li>
+ 		 		<a href="missouri.jpg"><img src="missourithumb.jpg" alt="Missouri Thumbnail" height="70" width="110">
+ 		 		<span><img src="missouri.jpg" alt="MU" height="300" width="500"><br>Jesse Hall</span></a>
+ 		 	</li>
+ 		 	
+ 		 	<li>
+ 		 		<a href="missouri2.jpg"><img src="missourithumb2.jpg" alt="Missouri" height="70" width="110">
+ 		 		<span><img src="missouri2.jpg" alt="MU" height="300" width="500"><br>Student Center</span></a>
+ 		 	</li>
+ 		 	
+ 		 	<li>
+ 		 		<a href="missouri3.jpg"><img src="missourithumb3.jpg" alt="Missouri" height="70" width="110">
+ 		 		<span><img src="missouri3.jpg" alt="MU" height="300" width="500"><br>Campus</span></a>
+ 		 	</li>
+ 		 	
+ 		 </ul>
+ 		 </div>
+	</div>
+
+	<div id="marymount" class="tabcontent">
+ 		 <div class="gallery">
+ 		 <ul> 
+ 		 	<li>
+ 		 		<a href="marymount1.jpg"><img src="marymountthumb1.jpg" alt="Marymount Thumbnail" height="70" width="110">
+ 		 		<span><img src="marymount1.jpg" alt="Marymount University" height="300" width="500"><br>Caruthers Hall</span></a>
+ 		 	</li>
+ 		 	
+ 		 	<li>
+ 		 		<a href="marymount2.jpg"><img src="marymountthumb2.jpg" alt="Marymount University" height="70" width="110">
+ 		 		<span><img src="marymount2.jpg" alt="Marymount University" height="300" width="500"><br>Main Hall</span></a>
+ 		 	</li>
+ 		 	
+ 		 	<li>
+ 		 		<a href="marymount3.jpg"><img src="marymountthumb3.jpg" alt="Marymount" height="70" width="110">
+ 		 		<span><img src="marymount3.jpg" alt="Univeristy of Marymount" height="300" width="500"><br>Church</span></a>
+ 		 	</li>
+ 		 	
+ 		 </ul>
+ 		 </div>
+	</div>
+	
+	<div id="texastech" class="tabcontent">
+		<div class="gallery">
+ 		 <ul> 
+ 		 	<li>
+ 		 		<a href="tt.jpg"><img src="ttthumb.jpg" alt="Texas Tech Thumbnail" height="70" width="110">
+ 		 		<span><img src="tt.jpg" alt="TTU" height="300" width="500"><br>Main Campus</span></a>
+ 		 	</li>
+ 		 	
+ 		 	<li>
+ 		 		<a href="tt2.jpg"><img src="ttthumb2.jpg" alt="Texas Tech" height="70" width="110">
+ 		 		<span><img src="tt2.jpg" alt="TTU" height="300" width="500"><br>Texas Tech Seal</span></a>
+ 		 	</li>
+ 		 	
+ 		 	<li>
+ 		 		<a href="tt3.jpg"><img src="ttthumb3.jpg" alt="Texas Tech" height="70" width="110">
+ 		 		<span><img src="tt3.jpg" alt="TTU" height="300" width="500"><br>Red Raider</span></a>
+ 		 	</li>
+ 		 	
+ 		 </ul>
+ 		 </div>
+	</div>
+	
+	<div id="texasam" class="tabcontent">
+		<div class="gallery">
+ 		 <ul> 
+ 		 	<li>
+ 		 		<a href="tam.jpg"><img src="tamthumb.jpg" alt="TexasA&M Thumbnail" height="70" width="110">
+ 		 		<span><img src="tam.jpg" alt="A&M" height="300" width="500"><br>Water Tower</span></a>
+ 		 	</li>
+ 		 	
+ 		 	<li>
+ 		 		<a href="tam2.jpg"><img src="tamthumb2.jpg" alt="Texas A&M" height="70" width="110">
+ 		 		<span><img src="tam2.jpg" alt="A&M" height="300" width="500"><br>Auditorium</span></a>
+ 		 	</li>
+ 		 	
+ 		 	<li>
+ 		 		<a href="tam3.jpg"><img src="tamthumb3.jpg" alt="Alabama" height="70" width="110">
+ 		 		<span><img src="tam3.jpg" alt="A&M" height="300" width="500"><br>Kyle Field</span></a>
+ 		 	</li>
+ 		 	
+ 		 </ul>
+ 		 </div>
+	</div>
+	
+<script>
+	function openCity(evt, cityName) {
+   
+    var i, tabcontent, tablinks;
+
+  
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+  
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+ }
+
+	document.getElementById("defaultOpen").click();
+
+</script>
+</main>
+	
+	<footer> Eric Garcia &copy; Copyright 2017 </footer>
+	
+</body>
+</html>
